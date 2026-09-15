@@ -1,0 +1,867 @@
+/* .navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+} */
+
+
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.homePage {
+    min-height: 100vh;
+    width: 100%;
+    background: #f8fafc;
+    color: #172033;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   TOP RIGHT ACTIONS
+========================= */
+
+.topRightActions {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    z-index: 10;
+}
+
+.topRightActions button {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 9px;
+    color: #4d5969;
+
+    padding: 8px 13px;
+}
+
+.topRightActions button:hover {
+    background: #eaf2fa;
+}
+
+.topRightActions .logoutBtn {
+    color: #e05252;
+}
+
+.topRightActions .logoutBtn:hover {
+    background: #fff0f0;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.meetContainer {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7% 50px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.leftPanel {
+    width: 55%;
+
+    display: flex;
+    align-items: center;
+}
+
+.heroContent {
+    width: 100%;
+    max-width: 650px;
+}
+
+
+/* BADGE */
+
+.welcomeBadge {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    background: #eef6ff;
+    color: #347fcf;
+
+    border: 1px solid #dcecff;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    margin-bottom: 24px;
+}
+
+.welcomeBadge span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+    background: #4295f5;
+}
+
+
+/* HEADING */
+
+.heroContent h1 {
+    margin: 0;
+
+    font-size: clamp(38px, 4.5vw, 64px);
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.heroContent h1 strong {
+    color: #4295f5;
+}
+
+
+/* DESCRIPTION */
+
+.heroDescription {
+    max-width: 560px;
+
+    margin: 22px 0 32px;
+
+    color: #687386;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   JOIN BOX
+========================= */
+
+.joinMeetingBox {
+    max-width: 600px;
+
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6ebf1;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 35px rgba(28, 48, 74, 0.08);
+}
+
+.joinTitle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #354052;
+}
+
+.joinTitle svg {
+    color: #4295f5;
+    font-size: 20px;
+}
+
+.joinInput {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.joinInput .MuiTextField-root {
+    flex: 1;
+}
+
+.joinInput .MuiOutlinedInput-root {
+    border-radius: 10px;
+    background: #fafbfd;
+}
+
+.joinInput .MuiOutlinedInput-root:hover fieldset {
+    border-color: #4295f5;
+}
+
+.joinInput .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #4295f5;
+}
+
+.joinButton {
+    min-width: 105px !important;
+    height: 56px !important;
+
+    border-radius: 10px !important;
+
+    background: #4295f5 !important;
+
+    text-transform: none !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    box-shadow: 0 6px 15px rgba(66, 149, 245, 0.25) !important;
+}
+
+.joinButton:hover {
+    background: #3186e8 !important;
+}
+
+.joinButton.Mui-disabled {
+    background: #b8d7f7 !important;
+    color: white !important;
+}
+
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.rightPanel {
+    width: 45%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageBackground {
+    width: min(480px, 100%);
+
+    padding: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #edf6ff;
+
+    border-radius: 35px;
+}
+
+.homeIllustration {
+    width: 100%;
+    max-width: 420px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.homeIllustration:hover {
+    transform: translateY(-5px);
+}
+
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.homeBottomText {
+    position: fixed;
+
+    bottom: 18px;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    color: #9aa4b2;
+    font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .meetContainer {
+        padding: 80px 5% 50px;
+    }
+
+    .leftPanel {
+        width: 58%;
+    }
+
+    .rightPanel {
+        width: 42%;
+    }
+
+    .heroContent h1 {
+        font-size: 42px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .topRightActions {
+        top: 18px;
+        right: 15px;
+    }
+
+    .topRightActions button {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+
+    .meetContainer {
+        min-height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 100px 20px 70px;
+    }
+
+    .leftPanel {
+        width: 100%;
+    }
+
+    .rightPanel {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .heroContent h1 {
+        font-size: 38px;
+        letter-spacing: -1.3px;
+    }
+
+    .heroDescription {
+        font-size: 15px;
+        margin: 18px 0 25px;
+    }
+
+    .joinMeetingBox {
+        padding: 15px;
+    }
+
+    .joinInput {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .joinButton {
+        width: 100%;
+    }
+
+    .imageBackground {
+        width: 85%;
+        padding: 20px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 430px) {
+
+    .topRightActions button {
+        font-size: 0;
+    }
+
+    .topRightActions button .MuiButton-startIcon {
+        margin: 0;
+    }
+
+    .heroContent h1 {
+        font-size: 33px;
+    }
+
+    .welcomeBadge {
+        font-size: 11px;
+    }
+
+    .imageBackground {
+        width: 90%;
+    }
+}
+
+
+
+/* =========================
+   HISTORY PAGE
+========================= */
+
+.historyPage {
+    min-height: 100vh;
+    width: 100%;
+
+    background: #f8fafc;
+
+    color: #172033;
+
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   HOME BUTTON
+========================= */
+
+.historyHome {
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    z-index: 10;
+}
+
+.historyHome button {
+    text-transform: none;
+
+    border-radius: 9px;
+
+    border-color: #d9e0e8;
+
+    color: #4d5969;
+
+    background: #ffffff;
+}
+
+.historyHome button:hover {
+    background: #eef6ff;
+
+    border-color: #4295f5;
+
+    color: #347fcf;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.historyContainer {
+    width: 86%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 75px 0 70px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.historyHeading {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+}
+
+.historyHeading h1 {
+    margin: 0;
+
+    font-size: 36px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+.historyHeading p {
+    margin: 8px 0 0;
+
+    color: #788394;
+
+    font-size: 15px;
+}
+
+.meetingCount {
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    background: #eef6ff;
+
+    color: #347fcf;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.historyGrid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.historyCard {
+    border: 1px solid #e5eaf0 !important;
+
+    border-radius: 16px !important;
+
+    background: #ffffff !important;
+
+    transition: all 0.25s ease;
+}
+
+.historyCard:hover {
+    transform: translateY(-4px);
+
+    border-color: #cfe3f8 !important;
+
+    box-shadow: 0 12px 30px rgba(
+        28,
+        48,
+        74,
+        0.08
+    ) !important;
+}
+
+.historyCard .MuiCardContent-root {
+    padding: 22px !important;
+}
+
+
+/* =========================
+   CARD TOP
+========================= */
+
+.cardTop {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.meetingIcon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #eef6ff;
+
+    color: #4295f5;
+}
+
+.meetingIcon svg {
+    font-size: 20px;
+}
+
+.meetingNumber {
+    font-size: 12px;
+
+    color: #8a95a5;
+
+    font-weight: 500;
+}
+
+
+/* =========================
+   CODE
+========================= */
+
+.meetingCode {
+    margin-bottom: 14px !important;
+
+    font-weight: 700 !important;
+
+    color: #263448;
+
+    word-break: break-all;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.meetingDate {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-bottom: 20px;
+
+    color: #7c8797;
+
+    font-size: 13px;
+}
+
+.meetingDate svg {
+    font-size: 16px;
+
+    color: #4295f5;
+}
+
+
+/* =========================
+   JOIN BUTTON
+========================= */
+
+.rejoinButton {
+    height: 43px !important;
+
+    border-radius: 9px !important;
+
+    background: #4295f5 !important;
+
+    text-transform: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 600 !important;
+
+    box-shadow: none !important;
+}
+
+.rejoinButton:hover {
+    background: #3186e8 !important;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.emptyHistory {
+    min-height: 400px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e6ebf1;
+
+    border-radius: 18px;
+}
+
+.emptyHistoryIcon {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background: #eef6ff;
+
+    color: #4295f5;
+}
+
+.emptyHistoryIcon svg {
+    font-size: 32px;
+}
+
+.emptyHistory h2 {
+    margin: 0 0 8px;
+
+    font-size: 22px;
+}
+
+.emptyHistory p {
+    max-width: 430px;
+
+    margin: 0 0 24px;
+
+    color: #7c8797;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+.startMeetingButton {
+    background: #4295f5 !important;
+
+    text-transform: none !important;
+
+    border-radius: 9px !important;
+
+    box-shadow: none !important;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 950px) {
+
+    .historyGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .historyContainer {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .historyHome {
+        top: 18px;
+        right: 18px;
+    }
+
+    .historyHome button {
+        min-width: 42px;
+
+        width: 42px;
+        height: 40px;
+
+        padding: 0;
+
+        font-size: 0;
+    }
+
+    .historyHome button .MuiButton-startIcon {
+        margin: 0;
+    }
+
+    .historyContainer {
+        width: 90%;
+
+        padding: 85px 0 60px;
+    }
+
+    .historyHeading {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin-bottom: 25px;
+    }
+
+    .historyHeading h1 {
+        font-size: 28px;
+    }
+
+    .historyHeading p {
+        font-size: 13px;
+    }
+
+    .meetingCount {
+        white-space: nowrap;
+
+        font-size: 11px;
+
+        padding: 7px 11px;
+    }
+
+    .historyGrid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+}
